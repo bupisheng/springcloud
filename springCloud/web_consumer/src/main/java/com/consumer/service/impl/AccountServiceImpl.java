@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
+import com.consumer.client.AccountFeignClient;
 import com.consumer.service.AccountService;
-import com.consumer.service.IAccountService;
 
 @Service("AccountService")
 public class AccountServiceImpl implements AccountService{
 
 	@Autowired
-	private IAccountService iAccountService;
+	private AccountFeignClient accountFeignClient;
 	
 //	@Autowired
 //	private RestTemplate restTemplate;
@@ -27,7 +27,7 @@ public class AccountServiceImpl implements AccountService{
 
 	@Override
 	public String sendToSayHi(String name) {
-		return iAccountService.sendToSayHi(name);
+		return accountFeignClient.sendToSayHi(name);
 	}
 
 		

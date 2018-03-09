@@ -8,4 +8,9 @@ eureka:
 
 spring: 
   application:
-    name: web-consumer      
+    name: web-consumer  
+    
+feign:
+  hystrix: 
+    enabled: true
+      

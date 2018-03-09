@@ -18,5 +18,6 @@
     <module>eureka_client</module>
     <module>account_service</module>
     <module>web_consumer</module>
+    <module>hystrix_dashboard</module>
   </modules>
 </project>
