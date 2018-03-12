@@ -20,5 +20,6 @@
     <module>web_consumer</module>
     <module>hystrix_dashboard</module>
     <module>zuul_server</module>
+    <module>config_server</module>
   </modules>
 </project>
